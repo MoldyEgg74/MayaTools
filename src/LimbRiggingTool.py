@@ -14,6 +14,7 @@ class LimbRigger:  # Class that handles the rigging of a limb with FK controls.
         self.mid = ""  # The middle joint of the limb.
         self.end = ""  # The end joint of the limb.
         self.controllerSize = 5  # The size of the FK controllers.
+        #Pooo
 
     def AutoFindJnts(self): # Function to create FK controls for a given joint.
         self.root = mc.ls(sl=True, type="joint")[0]
