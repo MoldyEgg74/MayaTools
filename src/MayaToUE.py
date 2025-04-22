@@ -50,7 +50,7 @@ class MayaToUE:
 
         mc.FBXResetExport()
         mc.FBXExportSmoothingGroups('-v', True)
-        mc.FBXEportInputConnections('-v', False)
+        mc.FBXExportInputConnections('-v', False)
 
         mc.FBXExport('-f', skeletalMeshExportPath, '-s', True, '-ea', False)
 
@@ -245,7 +245,7 @@ class MayaToUEWidget(QMayaWindow):
         self.masterLayout.addWidget(saveFileBtn)
 
     def SaveFilesBtnClicked(self):
-        self.mayaToUE.SaveFiles
+        self.mayaToUE.SaveFiles()
 
     def UpdateSavePreviewLabel(self):
         previewText = self.mayaToUE.GetSkeletalMeshSavePath()
