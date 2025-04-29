@@ -351,6 +351,7 @@ class MayaToUEWidget(QMayaWindow):
         self.mayaToUE.SetSelectedAsRootJnt()
         self.rootJntText.setText(self.mayaToUE.rootJnt)
 
-MayaToUEWidget().show()   
+def Run():
+    MayaToUEWidget().show()   
 
 # AnimClipEntryWidget(AnimClip()).show()

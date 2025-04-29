@@ -184,7 +184,8 @@ class LimbRigToolWidget(QMayaWindow): # Creates the widgets that are in the Limb
         except Exception as e: # Gives error message
             QMessageBox.critical(self, "Error", "Wrong Selection, Please select the first joint of a limb!")
 
-limbRigToolWidget = LimbRigToolWidget() # Assigns a variable
-limbRigToolWidget.show() # Shows window
+def Run():
+    limbRigToolWidget = LimbRigToolWidget() # Assigns a variable
+    limbRigToolWidget.show() # Shows window
 
 

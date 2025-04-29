@@ -19,4 +19,13 @@ def Install():
     shutil.copytree(os.path.join(prjPath, "vendor"), os.path.join(pluginDestPath, "vendor"))
     shutil.copy2(os.path.join(prjPath, "__init.py"), os.path.joint(pluginDestPath, "__init__.py"))
 
+    def AddShelfBtn(scriptName):
+        currentShelf = mc.tabLayout("ShelfLayout", q=True, selectTab=True)
+        mc.setParent(currentShelf)
+        icon = os.path.join(pluginDestPath, assetDirName, scriptName + ".PNG")
+        mc.shelfButton(c=f"from {pluginName}.src import {scriptName};{scriptName}.Run()", image=icon)
     
+    AddShelfBtn("LimbRiggingTool")
+    AddShelfBtn("MayaToUE")
+    AddShelfBtn("ProxyRigger")
+
