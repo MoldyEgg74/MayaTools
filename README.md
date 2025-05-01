@@ -13,3 +13,11 @@ Rigs any 3 joint limb.
 * Control the controller size
 * Control the Controller color
 * Modular approach
+
+##Space Switcher
+
+In-Progress
+
+* TBD
+* TBD
+* TBD
