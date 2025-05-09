@@ -16,8 +16,13 @@ Rigs any 3 joint limb.
 
 ## Space Switcher
 
-In-Progress
+You select a control (driven object).
 
-* TBD
-* TBD
-* TBD
+
+You then add multiple "space" parent objects.
+
+
+The script creates an enum switch (spaceSwitch) on the control.
+
+
+Based on the enum value, a condition node activates the appropriate constraint target, allowing space switching.
